@@ -1,0 +1,38 @@
+.tabs {
+    font-family: Arial, sans-serif;
+}
+
+.tab-headers {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-header {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: white;
+    border-right: 1px solid #ccc;
+    outline: none;
+}
+
+.tab-header:last-child {
+    border-right: none;
+}
+
+.tab-header.active {
+    background: black;
+    color: white;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
